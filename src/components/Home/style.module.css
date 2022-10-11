@@ -1,0 +1,18 @@
+.container::before {
+  background: url('../../assets/stacked-steps-haikei.svg');
+  background-size: center;
+  background-repeat: no-repeat;
+  content: '';
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 100vw;
+  height: 100%;
+  z-index: -1;
+}
+
+@media (min-width: 85em) {
+  .container::before {
+    height: 100%;
+  }
+}

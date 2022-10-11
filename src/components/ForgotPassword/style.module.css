@@ -1,0 +1,56 @@
+.form {
+  display: flex;
+  flex-direction: column;
+  justify-content: flex-end;
+  min-height: calc(100vh - 3rem);
+}
+
+.header {
+  margin-top: 2rem;
+  font-size: 3rem;
+  line-height: 0.85;
+  line-height: 1;
+  text-align: left;
+}
+
+.headerWithColor {
+  color: var(--primary-color);
+}
+
+.formInputs {
+  flex-grow: 1;
+}
+
+.labelUsername:focus-within,
+.labelNumber:focus-within {
+  border: var(--border-hightlight);
+}
+
+.instruction {
+  opacity: var(--opacity-1);
+  font-size: 0.85rem;
+  margin-left: 1rem;
+  text-align: left;
+}
+
+.request {
+  background-color: var(--primary-color);
+  color: var(--light-color);
+}
+
+@media (min-width: 48em) {
+  .form {
+    justify-content: center;
+    width: 70%;
+    margin-inline: auto;
+  }
+
+  .header {
+    text-align: center;
+  }
+
+  .formInputs {
+    flex-grow: 0;
+    margin: 2rem 0;
+  }
+}

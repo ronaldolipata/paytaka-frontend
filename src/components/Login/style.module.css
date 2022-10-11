@@ -1,0 +1,58 @@
+.form {
+  display: flex;
+  flex-direction: column;
+  justify-content: flex-end;
+  min-height: calc(100vh - 3rem);
+}
+
+.header {
+  color: var(--primary-color);
+  margin-top: 2rem;
+  font-size: 3rem;
+  line-height: 1;
+  text-align: left;
+}
+
+.subHeader {
+  text-align: left;
+  font-weight: 600;
+  margin-bottom: 1.5rem;
+}
+
+.formInputs {
+  flex-grow: 1;
+}
+
+.labelUsername:focus-within,
+.labelPassword:focus-within {
+  border: var(--border-hightlight);
+}
+
+.login {
+  background-color: var(--primary-color);
+  color: var(--light-color);
+}
+
+.error {
+  color: var(--red-color);
+  text-align: left;
+  margin: -1rem 0 0 1rem;
+}
+
+@media (min-width: 48em) {
+  .form {
+    justify-content: center;
+    width: 70%;
+    margin-inline: auto;
+  }
+
+  .header,
+  .subHeader {
+    text-align: center;
+  }
+
+  .formInputs {
+    flex-grow: 0;
+    margin: 2rem 0;
+  }
+}

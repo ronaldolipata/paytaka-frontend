@@ -1,0 +1,7 @@
+.container {
+  display: grid;
+  place-content: center;
+  height: calc(100vh - 5rem);
+  font-size: 5rem;
+  line-height: 1.2;
+}

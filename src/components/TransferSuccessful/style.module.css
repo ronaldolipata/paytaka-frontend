@@ -1,0 +1,85 @@
+.container {
+  box-shadow: var(--box-shadow);
+  background-color: var(--light-color);
+  position: absolute;
+  left: 0;
+  right: 0;
+  bottom: 0;
+  height: 30rem;
+  border-radius: 1.2rem 1.2rem 0 0;
+  display: grid;
+  place-content: center;
+  max-width: 24rem;
+  z-index: 1;
+}
+
+.checkIcon {
+  color: var(--primary-color);
+  font-size: 5rem;
+  margin-bottom: 1rem;
+}
+
+.headerContainer {
+  flex-grow: 1;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+}
+
+.title,
+.amount {
+  margin-top: 0.5rem;
+  font-size: 1.5rem;
+  line-height: 1;
+  font-weight: 800;
+}
+
+.amount {
+  color: var(--primary-color);
+}
+
+.subTitle {
+  opacity: var(--opacity-1);
+  margin: 2rem;
+  font-weight: 700;
+}
+
+.ctaContainer {
+  display: flex;
+  justify-content: center;
+  flex-wrap: wrap;
+  gap: 1rem;
+}
+
+.receipt,
+.home {
+  background-color: var(--primary-color);
+  color: var(--light-color);
+  padding: 1.25rem;
+  font-size: 1rem;
+  margin: 0;
+  border-radius: 1rem;
+  width: 10rem;
+}
+
+.receipt {
+  background-color: var(--accent-color);
+  color: var(--primary-color);
+}
+
+@media (min-width: 48em) {
+  .container {
+    margin: auto;
+    position: absolute;
+    top: 0;
+    left: 0;
+    bottom: 0;
+    right: 0;
+    max-width: 28rem;
+    border-radius: 1.2rem;
+  }
+
+  .headerContainer {
+    flex-grow: 0;
+  }
+}

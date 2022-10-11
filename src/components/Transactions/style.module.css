@@ -1,0 +1,95 @@
+.container {
+  background-color: var(--light-color);
+  border: var(--border);
+  box-shadow: var(--box-shadow);
+  margin: 1.5rem 0;
+  padding: 1rem;
+  border-radius: 1rem;
+}
+
+.transactionsHeaderContainer {
+  padding-top: 1rem;
+}
+
+.transactionsHeaderContainer {
+  display: flex;
+  justify-content: space-between;
+}
+
+.transactionHeader {
+  font-size: 1.5rem;
+  font-weight: 800;
+}
+
+.seeAll a {
+  color: var(--primary-color);
+  font-weight: 700;
+}
+
+.transactionsList {
+  margin: 1rem 0;
+}
+
+.transactionsItem {
+  display: flex;
+  justify-content: space-between;
+  margin: 0 -0.5rem;
+  padding: 0.25rem 1rem;
+  border-radius: 1rem;
+}
+
+.transactionsItem:nth-child(odd) {
+  background-color: var(--light-gray-color);
+}
+
+.transactionsItemLeft,
+.transactionsItemRight {
+  display: flex;
+  flex-direction: column;
+  margin: 0.5rem 0;
+}
+
+.transactionsItemLeft {
+  align-items: flex-start;
+}
+
+.transactionsItemRight {
+  align-items: flex-end;
+}
+
+.transactionLowOpacity {
+  opacity: var(--opacity-3);
+  font-size: 0.85rem;
+  font-weight: 600;
+}
+
+.transactionHightlight,
+.noTransactions {
+  font-size: 1.25rem;
+  font-weight: 700;
+  line-height: 0.85;
+}
+
+.noTransactions {
+  padding: 1rem 0;
+}
+
+@media (min-width: 48em) {
+  .container {
+    padding: 3rem;
+  }
+
+  .transactionHeader {
+    margin-bottom: 2rem;
+  }
+
+  .transactionsItem {
+    margin: 0 -1.5rem;
+    padding: 0.25rem 1.5rem;
+    border-radius: 1rem;
+  }
+
+  .noTransactions {
+    padding: 0;
+  }
+}

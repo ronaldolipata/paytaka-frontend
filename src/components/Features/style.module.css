@@ -1,0 +1,29 @@
+.container {
+  display: grid;
+  grid-template-columns: repeat(auto-fill, minmax(4rem, 1fr));
+  gap: 0.9rem;
+  padding-bottom: 1rem;
+}
+
+.container a {
+  color: var(--dark-color);
+}
+
+.featureButton {
+  background-color: var(--gray-color);
+  color: var(--dark-color);
+  display: grid;
+  place-content: center;
+  margin: 0;
+  padding: 1rem 1.2rem;
+  border-radius: 0.7rem;
+  font-size: 2rem;
+}
+
+.featureText {
+  opacity: var(--opacity-1);
+  margin-top: 0.5rem;
+  font-size: 0.8rem;
+  font-weight: 600;
+  line-height: 1;
+}

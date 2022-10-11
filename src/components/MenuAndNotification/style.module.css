@@ -1,0 +1,38 @@
+.container {
+  display: flex;
+  justify-content: space-between;
+  margin: 1.5rem 0;
+}
+
+.subContainer {
+  display: flex;
+  gap: 1rem;
+}
+
+.wallet,
+.savings,
+.credit {
+  background-color: var(--light-color);
+  box-shadow: var(--box-shadow);
+  width: auto;
+  font-size: 0.85rem;
+  font-weight: 600;
+  padding: 0.85rem 1.85rem;
+  border-radius: 2rem;
+}
+
+.savings,
+.credit {
+  opacity: var(--opacity-2);
+}
+
+.menuButton,
+.notificationButton,
+.logoutButton {
+  color: var(--light-color);
+  background-color: transparent;
+  font-size: 2.5rem;
+  padding: 0;
+  margin: 0;
+  width: auto;
+}

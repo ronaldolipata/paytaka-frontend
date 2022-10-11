@@ -1,0 +1,23 @@
+.container {
+  display: flex;
+  justify-content: center;
+  gap: 1rem;
+  margin: 1.5rem 0;
+}
+
+.wallet,
+.savings,
+.credit {
+  background-color: var(--light-color);
+  box-shadow: var(--box-shadow);
+  width: auto;
+  font-size: 0.85rem;
+  font-weight: 600;
+  padding: 0.85rem 1.85rem;
+  border-radius: 2rem;
+}
+
+.savings,
+.credit {
+  opacity: var(--opacity-2);
+}
