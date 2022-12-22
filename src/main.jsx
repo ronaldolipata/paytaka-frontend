@@ -2,7 +2,7 @@ import React from 'react';
 import ReactDOM from 'react-dom/client';
 import App from './App';
 import './index.css';
-import { BrowserRouter, Routes, Route } from 'react-router-dom';
+import { HashRouter, Routes, Route } from 'react-router-dom';
 import WalletContextComponent from './WalletContext';
 import SignUp from './components/SignUp';
 import SignUpConfirmation from './components/SignUpConfirmation';
@@ -16,7 +16,7 @@ import PageNotFound from './components/PageNotFound';
 
 ReactDOM.createRoot(document.getElementById('root')).render(
   <React.StrictMode>
-    <BrowserRouter>
+    <HashRouter>
       <Routes>
         <Route
           path="/"
@@ -99,6 +99,6 @@ ReactDOM.createRoot(document.getElementById('root')).render(
           }
         ></Route>
       </Routes>
-    </BrowserRouter>
+    </HashRouter>
   </React.StrictMode>
 );
