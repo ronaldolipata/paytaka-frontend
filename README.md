@@ -1,3 +1,7 @@
+# Paytaka - Virtual Wallet
+
+With the recent popularity and convenient usage of e-wallet, it has been the most used cashless payment method. Paytaka has seven main features: Signup, Login, Cash in, Transfer Funds, Receive Funds, See Balance, See Latest Transactions
+
 # Getting started
 
 This project was created with `create-uplift-project`
