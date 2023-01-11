@@ -10,6 +10,7 @@
   display: grid;
   place-content: center;
   max-width: 24rem;
+  margin-inline: auto;
   z-index: 1;
 }
 
