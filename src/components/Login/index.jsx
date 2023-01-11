@@ -1,5 +1,5 @@
 import { WalletContext } from '../../WalletContext';
-import { Link } from 'react-router-dom';
+import { Link, useNavigate } from 'react-router-dom';
 import { useState, useRef, useContext } from 'react';
 import style from './style.module.css';
 
@@ -8,6 +8,8 @@ const Login = () => {
     useContext(WalletContext);
   const [buttonDisabled, setButtonDisabled] = useState(true);
   const [linkPath, setLinkPath] = useState(undefined);
+
+  const navigate = useNavigate();
 
   const refUsername = useRef(null);
   const refPassword = useRef(null);
@@ -27,7 +29,7 @@ const Login = () => {
     }
 
     appendUsername(refUsername.current.value);
-    setLinkPath('/home');
+    navigate('/home');
   };
 
   const buttonDisplay = () => {
@@ -67,8 +69,8 @@ const Login = () => {
           <input
             ref={refUsername}
             onChange={onChangeHandler}
-            placeholder="Enter your username"
-            type="text"
+            placeholder='Enter your username'
+            type='text'
           />
         </label>
         <p ref={refUsernameError} className={style.error}></p>
@@ -77,22 +79,20 @@ const Login = () => {
           <input
             ref={refPassword}
             onChange={onChangeHandler}
-            placeholder="Enter your password"
-            type="password"
+            placeholder='Enter your password'
+            type='password'
           />
         </label>
         <Link to={`/forgotpassword`}>Forgot your password?</Link>
       </div>
       <div className={style.ctaContainer}>
-        <Link to={linkPath} onClick={onSubmit}>
-          <button
-            disabled={buttonDisabled}
-            style={buttonDisplay()}
-            className={style.login}
-          >
-            Login
-          </button>
-        </Link>
+        <button
+          disabled={buttonDisabled}
+          style={buttonDisplay()}
+          className={style.login}
+        >
+          Login
+        </button>
         <Link to={`/signup`}>Start an account here</Link>
       </div>
     </form>
