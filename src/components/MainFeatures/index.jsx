@@ -1,4 +1,4 @@
-import { startTransition, useContext, useRef, useState } from 'react';
+import { useContext, useRef, useState } from 'react';
 import { WalletContext } from '../../WalletContext';
 import { Icon } from '@ricons/utils';
 import { Eye24Filled } from '@ricons/fluent';
