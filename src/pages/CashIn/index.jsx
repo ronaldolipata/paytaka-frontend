@@ -4,7 +4,7 @@ import { WalletContext } from '../../WalletContext';
 import { Link } from 'react-router-dom';
 import style from './style.module.css';
 import convertToCurrency from '../../convertToCurrency';
-import CashInSuccessful from '../CashInSuccessful';
+import CashInSuccessful from '../../components/CashInSuccessful';
 
 const CashIn = () => {
   const client = m3o(import.meta.env.VITE_API_KEY);
@@ -84,9 +84,9 @@ const CashIn = () => {
           Amount
           <input
             ref={refAmount}
-            type="number"
+            type='number'
             onChange={onChangeInputHandler}
-            placeholder="Enter the amount"
+            placeholder='Enter the amount'
           />
         </label>
         <p className={style.balance}>Balance: {convertToCurrency(balance)}</p>

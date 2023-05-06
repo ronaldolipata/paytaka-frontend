@@ -5,7 +5,7 @@ import { Link } from 'react-router-dom';
 import debounce from 'lodash.debounce';
 import style from './style.module.css';
 import convertToCurrency from '../../convertToCurrency';
-import TransferSuccessful from '../TransferSuccessful';
+import TransferSuccessful from '../../components/TransferSuccessful';
 
 const Transfer = () => {
   const client = m3o(import.meta.env.VITE_API_KEY);
@@ -131,9 +131,9 @@ const Transfer = () => {
           Transfer to (Username)
           <input
             ref={refUsername}
-            type="text"
+            type='text'
             onChange={onChangeInputHandler}
-            placeholder="Enter the username"
+            placeholder='Enter the username'
           />
         </label>
         <p ref={refTransferToUsernameError} className={style.error}></p>
@@ -141,22 +141,22 @@ const Transfer = () => {
           Amount
           <input
             ref={refAmount}
-            type="number"
+            type='number'
             onChange={onChangeInputHandler}
-            placeholder="Enter the amount"
+            placeholder='Enter the amount'
           />
         </label>
         <p className={style.balance}>Balance: {convertToCurrency(balance)}</p>
         <label className={style.labelAmount}>
           Purpose
-          <select ref={refSelect} className={style.select} name="" id="">
-            <option className={style.option} value="Fund Transfer">
+          <select ref={refSelect} className={style.select} name='' id=''>
+            <option className={style.option} value='Fund Transfer'>
               Fund Transfer
             </option>
-            <option className={style.option} value="Payment">
+            <option className={style.option} value='Payment'>
               Payment
             </option>
-            <option className={style.option} value="Others">
+            <option className={style.option} value='Others'>
               Others
             </option>
           </select>

@@ -1,7 +1,7 @@
-import MenuAndNotification from '../MenuAndNotification';
-import Navigation from '../Navigation';
-import Transactions from '../Transactions';
-import MainFeatures from '../MainFeatures';
+import MenuAndNotification from '../../components/MenuAndNotification';
+import Navigation from '../../components/Navigation';
+import Transactions from '../../components/Transactions';
+import MainFeatures from '../../components/MainFeatures';
 import style from './style.module.css';
 
 const Home = () => {

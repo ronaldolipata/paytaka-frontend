@@ -1,16 +1,16 @@
 import { Routes, Route } from 'react-router-dom';
-import Intro from './pages/Intro';
-import WalletContextComponent from './WalletContext';
-import SignUp from './components/SignUp';
-import SignUpConfirmation from './components/SignUpConfirmation';
-import ForgotPassword from './components/ForgotPassword';
-import Login from './components/Login';
-import Home from './components/Home';
-import CashIn from './components/CashIn';
-import CashInSuccessful from './components/CashInSuccessful';
-import Transfer from './components/Transfer';
-import PageNotFound from './components/PageNotFound';
-import './App.css';
+import WalletContextComponent from '@/WalletContext';
+import PageNotFound from '@/pages/PageNotFound';
+import Intro from '@/pages/Intro';
+import Login from '@/pages/Login';
+import SignUp from '@/pages/SignUp';
+import Home from '@/pages/Home';
+import CashIn from '@/pages/CashIn';
+import Transfer from '@/pages/Transfer';
+import SignUpConfirmation from '@/components/SignUpConfirmation';
+import ForgotPassword from '@/components/ForgotPassword';
+import CashInSuccessful from '@/components/CashInSuccessful';
+import '@/App.css';
 
 const App = () => {
   return (
